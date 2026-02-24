@@ -273,9 +273,12 @@ Nan (Not a Number)
 
 // 論履歴（&&)について　左がfalsyなら左が返却。それ以外は右が返却
 //const r1 = "" & "foo";　// ""がfalsyなので""が返却される
-const r2 = 2 & 0; // 2はtruthyなので0が返却される
-const r3 = "foo" & 4; // "foo"はtruthyなので4が返却される
-const r4 = 2 && 1 && 0; //0が返却される。
-const r5 = 2 && 1 && 0 %& 3; //0が返却される。
+//const r2 = 2 & 0; // 2はtruthyなので0が返却される
+//const r3 = "foo" & 4; // "foo"はtruthyなので4が返却される
+//const r4 = 2 && 1 && 0; //0が返却される。
+//const r5 = 2 && 1 && 0 %& 3; //0が返却される。
 
 // 論理和（||） truthyが見つかった値を返却。なければ一番右。
+const r6 = "" || "foo"; // fooが返却される
+const r7 = 0 || 2 || || 0; // 2が返却される
+const r8 = "foo" || 4; // "foo"が返却される
