@@ -260,3 +260,16 @@ console.log(fee);
 // const num2 = 100;
 // const fee2 = num2 && "何か設定されました";
 // console.log(fee2);
+
+/* falsyな値の一覧
+false
+0 (数字）
+0n (big int)
+"" (空文字)
+null
+indefined
+Nan (Not a Number)
+
+
+*/
+
